@@ -1,6 +1,6 @@
 #pragma once
 
-#include <glew.h>
+#include <GL/glew.h>
 #include "Shader.h"
 #include "Vertex.h"
 #include <QGLWidget>
@@ -47,7 +47,7 @@ protected:
 	void wheelEvent(QWheelEvent* e);
 
 public:
-	static enum { RENDERING_MODE_REGULAR = 0, RENDERING_MODE_LINE };
+	enum { RENDERING_MODE_REGULAR = 0, RENDERING_MODE_LINE };
 
 public:
 	MainWindow* mainWin;

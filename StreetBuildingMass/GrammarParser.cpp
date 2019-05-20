@@ -57,7 +57,7 @@ void parseGrammar(const char* filename, std::vector<Grammar>& grammars) {
 	}
 }
 
-void parseGrammar(QDomElement& root, Grammar& grammar) {
+void parseGrammar(const QDomElement& root, Grammar& grammar) {
 	QDomNode child_node = root.firstChild();
 	while (!child_node.isNull()) {
 		if (child_node.toElement().tagName() == "attr") {

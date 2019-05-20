@@ -309,7 +309,7 @@ void RenderManager::resize(int winWidth, int winHeight){
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 		
-	qsrand(5648943215);
+	qsrand((uint)5648943215);
 		
 	int sizeX = winWidth;
 	int sizeZ = winHeight;

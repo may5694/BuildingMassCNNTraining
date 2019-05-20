@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "glew.h"
+#include <GL/glew.h>
 #include <vector>
 #include <QMap>
 #include "Vertex.h"
@@ -28,7 +28,7 @@ public:
 
 class RenderManager {
 public:
-	static enum { RENDERING_MODE_BASIC = 0, RENDERING_MODE_SSAO, RENDERING_MODE_LINE, RENDERING_MODE_HATCHING, RENDERING_MODE_CONTOUR };
+	enum { RENDERING_MODE_BASIC = 0, RENDERING_MODE_SSAO, RENDERING_MODE_LINE, RENDERING_MODE_HATCHING, RENDERING_MODE_CONTOUR };
 
 public:
 	Shader shader;

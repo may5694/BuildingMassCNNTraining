@@ -8,6 +8,9 @@
 
 namespace utils {
 
+#ifdef M_PI
+#undef M_PI
+#endif
 	const double M_PI = 3.141592653589;
 	const float FLOAT_TOL = 1e-6f;
 

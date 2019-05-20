@@ -28,7 +28,7 @@ public:
 
 class Value  {
 public:
-	static enum { TYPE_ABSOLUTE = 0, TYPE_RELATIVE, TYPE_FLOATING };
+	enum { TYPE_ABSOLUTE = 0, TYPE_RELATIVE, TYPE_FLOATING };
 
 public:
 	int type;
